@@ -7,6 +7,7 @@ import { HomePageComponent } from './Pages/home-page/home-page.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { SearchMovieComponent } from './Components/search-movie/search-movie.component';
 import { BookGalleryComponent } from './Pages/book-gallery/book-gallery.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BookGalleryComponent } from './Pages/book-gallery/book-gallery.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

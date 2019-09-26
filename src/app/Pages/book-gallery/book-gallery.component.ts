@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiCallBookService } from '../../Services/api-call-book.service';
 
 @Component({
   selector: 'app-book-gallery',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book-gallery.component.scss']
 })
 export class BookGalleryComponent implements OnInit {
-  url:'http://gateway.marvel.com/v1/public/comics?ts=1&apikey=b152002711dd3bddb69835ef11c879b7&hash=f92495bbdd7842496ae39be04f4058ef'
-  constructor() { }
+  Datas;
+
+  constructor(private ApiCallBookService: ApiCallBookService) { }
 
   ngOnInit() {
+    this.fetchData()
   }
-
+  
+  fetchData() {
+    this.ApiCallBookService.getListofBook().subscribe((data) =>
+      this.Datas = data.data.results,
+      )
+    this.Datas.map()
+  }
 }
