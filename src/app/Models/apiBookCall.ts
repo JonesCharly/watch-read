@@ -24,19 +24,3 @@ export class Image {
     Object.assign(this, image);
   }
 }
-
-
-        // export interface ResponseBookApi<Book> {
-        //   code: number;
-        //   data: Book;
-        // }
-
-        // export interface ResponseBook extends ResponseBookApi<ResponseBook>{
-        //   results: any;
-        // }
-
-        // export interface BookItem {
-        //   id: number;
-        //   title: string;
-        //   images: any;
-        // }

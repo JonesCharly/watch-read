@@ -1,0 +1,16 @@
+.book_gallery{
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  justify-items: center;
+  .card { 
+    width: 200px;
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 500
+  }
+  img {
+    width: 180px;
+    max-height: 280px;
+    min-height: 200px;
+  }
+}
