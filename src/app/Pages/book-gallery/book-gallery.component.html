@@ -1,5 +1,8 @@
 <p>book-gallery works!</p>
-<div *ngFor='let data of Datas'>
-  <p>{{data.title}}</p>
-  <p>{{data.images}}</p>
+<div *ngIf='bookList'>
+  <div  *ngFor='let book of bookList'>
+    <p>{{book.title}}</p>
+    <p></p>
+    <img src={{book.thumbnail.url}}/>
+  </div>
 </div>
