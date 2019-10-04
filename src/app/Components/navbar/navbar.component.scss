@@ -1,0 +1,22 @@
+.navbar {
+  margin-bottom: 0px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  a {
+    cursor: pointer;
+    font-family: 'Playfair Display SC', serif;
+    text-decoration: none;
+    margin: 20px;
+    color: rgb(36, 36, 36);
+  }
+  a:hover {
+  text-decoration: underline;
+  color: rgb(36, 36, 36);
+}
+  a:focus {
+    font-size: 17px;
+    text-decoration: underline;
+  }
+}

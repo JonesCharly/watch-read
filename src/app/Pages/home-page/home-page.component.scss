@@ -1,0 +1,22 @@
+.homeBanner_ {
+  width: 100vw;
+  height: 500px;
+  background-image: url("../../../assets/blur-book-stack-books-590493.jpg");
+  color: white;
+  h1{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 80px;
+    padding: 3% 0% 0% 11%;
+    margin-top: 0;
+  }
+  hr{
+    width: 30%;
+    margin-left: 11%;
+    margin-top: -2%;
+  }
+  h4 {
+    text-align: center;
+    font-family: 'Prata', serif;
+    font-size: 30px;
+  }
+}

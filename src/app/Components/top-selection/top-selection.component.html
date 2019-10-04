@@ -1,0 +1,11 @@
+<div class="topContainer">
+  <h3 class="topTitle">Top Book Search</h3>
+  <div class="topSelection">
+    <div class="topCard" *ngFor="let topBook of topBooks">
+      <img class="bookPoster" src='{{topBook.volumeInfo.imageLink}}'>
+      <h5 class="bookTitle">{{topBook.volumeInfo.title}}</h5>
+      <p class="bookSubtitle">{{topBook.volumeInfo.subtitle}}</p>
+      <p class="bookPages">nombres de pages:{{topBook.volumeInfo.pageCount}}</p>
+    </div>
+  </div>
+</div>

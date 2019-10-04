@@ -7,6 +7,7 @@ import { HomePageComponent } from './Pages/home-page/home-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
+  { path: 'homepage', component: HomePageComponent },
   { path: 'bookgallery', component: BookGalleryComponent }
 ];
 

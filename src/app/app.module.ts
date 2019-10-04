@@ -8,6 +8,7 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { SearchMovieComponent } from './Components/search-movie/search-movie.component';
 import { BookGalleryComponent } from './Pages/book-gallery/book-gallery.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TopSelectionComponent } from './Components/top-selection/top-selection.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomePageComponent,
     NavbarComponent,
     SearchMovieComponent,
-    BookGalleryComponent
+    BookGalleryComponent,
+    TopSelectionComponent
   ],
   imports: [
     BrowserModule,
